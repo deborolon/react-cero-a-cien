@@ -2,14 +2,16 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Bienvenidos from './components/Bienvenidos'
+import BienvenidaDinamico from './components/BienvenidaDinamico'
+import BienvenidaNoDinamica from './components/BienvenidaNoDinamica'
+import ButtonDefault from './components/ButtonDefault'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
+      {/* <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -28,9 +30,13 @@ function App() {
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
-      </p>
-      <Bienvenidos saludo="Hola mundo!" />
-      {/* <Bienvenidos saludo="alguna otra cosa"></Bienvenidos> */}
+      </p> */}
+      {/* <BienvenidaDinamico saludo="Bienvenida Dinamico!" nombre="Marcelo"/> */}
+      <BienvenidaDinamico saludo="Bienvenida Dinamico!" nombre="Marcelo"/>
+      <BienvenidaNoDinamica />
+      {/* <BienvenidaDinamico saludo="alguna otra cosa"></Bienvenidos> */}
+      {/* <ButtonDefault></ButtonDefault> */}
+      <ButtonDefault />
     </>
   )
 }
