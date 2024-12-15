@@ -5,6 +5,7 @@ import './App.css'
 import BienvenidaDinamico from './components/BienvenidaDinamico'
 import BienvenidaNoDinamica from './components/BienvenidaNoDinamica'
 import ButtonDefault from './components/ButtonDefault'
+import List from './components/List'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -37,6 +38,7 @@ function App() {
       {/* <BienvenidaDinamico saludo="alguna otra cosa"></Bienvenidos> */}
       {/* <ButtonDefault></ButtonDefault> */}
       <ButtonDefault />
+      <List />
     </>
   )
 }
